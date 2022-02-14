@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+}
+ul{
+    list-style: none;
+}
+
+:root{
+    --main-background: #E5E5E5;
+    --white: #fff;
+}
+/* global classes */
+.df{
+    display: flex;
+}
+.hide{
+    visibility: hidden;
+    pointer-events: none;
+    height: 0;
+}
+/* global classes */
+
+body{
+    font-family: 'FiraGO', sans-serif;
+    background-color: var(--main-background);
+}
+.main{
+    display: flex;
+}
+.container{
+    max-width: 832px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 64px;
+    margin-bottom: 35px;
+}
+.result-and-nav-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.result-counter{
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-buttons{
+    margin-bottom: 36px;  
+}
+.left-arrow-wrapper{
+    margin-right: 16px;
+}
+.right-arrow-wrapper, .left-arrow-wrapper{
+    border-radius: 8px;
+    background-color: #F0F2F5;
+    padding: 12px 14px;
+    cursor: pointer;
+    /* width: 32px;
+    height: 32px; */
+}
+.notifications-wrapper{
+
+}
+.notification-ul{
+
+}
+.notification-item{
+    background-color: #F0F5FF;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.notification-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #696974;
+    margin: 20px auto 20px 24px;
+}
+.notification-buttons-wrapper{
+    display: flex;
+}
+.notification-btn{
+    border-radius: 6px;
+    height: 56px;
+    width: 98px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+.delete-btn{
+    color: #FC5A5A;
+    padding: 19px 25px 19px 26px;
+    border: 1px solid #FC5A5A;
+    margin: 4px 4px 4px;
+}
+.details-btn{
+    background-color: #0659FD;
+    color: var(--white);
+    padding: 19px 29px;
+    margin: 4px 4px 4px 0px;
+}
+.donation-info{
+    background-color: var(--white);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    padding: 20px 24px 0px 24px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+.donation-title{
+    color: #696974;
+    font-weight: 500;
+}
+.donation-description{
+    margin-top: 8px;
+ 
+    color: #29292980;
+}
+.donation-buttons-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.donation-btn{
+    border-radius: 6px;
+    height: 56px;
+    width: 98px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+.close-btn{
+    background-color: #0659FD;
+    color: var(--white);
+    padding: 19px 17px 19px 18px;
+    margin: 4px 4px 4px 0px;
+}
+/* sidebar */
+.sidebar{
+    position: relative;
+    width: 328px;
+    height: 900px;
+    background-color: var(--white);
+    transition: all .2s ease-in-out;
+}
+.back-button-wrapper{
+    margin: 32px 56px 0px 40px;
+    cursor: pointer;
+}
+.profile-wrapper{
+    margin: 76px 32px 0px 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F6F6F7;
+    padding-bottom: 24px;
+
+}
+.profile-image-wrapper{
+
+}
+.profile-image-wrapper img{
+    width: 48px;
+    height: 64px;
+    display: block;
+    margin-right: 16px;
+}
+.person-name{
+    font-weight: 500;
+    line-height: 24px;
+    width: 182px;
+}
+.edit-info{
+    font-size: 12px;
+    line-height: 24px;
+    width: 205px;
+}
+.functionality-bar{
+    margin-left: 50px;
+    margin-right: 35px;
+}
+.documents{
+    cursor: pointer;
+    margin-bottom: 22px;
+    display: flex;
+}
+.doc-icon{
+    margin-right: 19px;
+}
+.doc-title{
+    line-height: 24px;
+}
+.sidebar-arrow{
+    width: 16px;
+    height: 80px;
+    background: rgba(0, 78, 203, .1);
+    border-radius: 6px 0px 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 449px;
+    left: 312px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.burger-bar{
+    width: 24px;
+    height: 24px;
+    padding: 6px 4px;
+    margin: 22px 20px 22px 0px;
+    cursor: pointer;
+    display: none;
+}
+.back{
+    display: none;
+}
+.responsive-delete-btn, .responsive-dropdown-btn{
+    display: none;
+}
+.responsive-nav-buttons{
+    display: none;
+}
+@media (max-width: 376px){
+    .container{
+        margin: 0 16px ;
+    }
+    .burger-bar{
+        display: block;
+    }
+    .sidebar{
+        top: 0px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .sidebar-arrow{
+        display: none;
+    }
+    .back-button-wrapper{
+        margin: 16px 0px 16px 16px;
+        display: flex;
+    }
+    .profile-wrapper, .profile-info-wrapper, .functionality-bar{
+        display: none;
+    }
+    .back{
+        display: block;
+        margin-left: 11px;
+    }
+    .notification-item{
+        width: 100%;
+        height: 48px;
+        margin-right: 0;
+    }
+    .delete-btn, .details-btn{
+        display: none;
+    }
+    .responsive-delete-btn, .responsive-dropdown-btn{
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    .responsive-delete-btn{
+        margin-right: 23px;
+    }
+    .responsive-dropdown-btn{
+        margin-right: 19px;
+    }
+    .donation-info{
+        display: none;
+    }
+    .nav-buttons{
+        display: none;
+    }
+    .responsive-nav-buttons{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .main-title{
+        margin-bottom: 24px;
+        margin-top: 104px;
+    }
+    .result-counter{
+        margin-bottom: 16px;
+    }
+}
